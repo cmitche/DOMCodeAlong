@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>W3SchoolsCodeAlong</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <!-- #1 innerHTML property - HTML DOM ELEMENTS -->
+  <p id="demo"></p>
+  <!-- 2 Change HTML content - CHANGING HTML -->
+  <p id="p1">Hello World!</p>
+  <!-- #3 Changing HTML Style - CHANGING CSS -->
+  <p id="p2">Hello World!</p>
+  <!-- #4 HTML Event Attributes - HTML DOM EVENTS -->
+  <p>Click the button to display the date.</p>
+  <button onclick="displayDate()">Find out today's date</button>
+  <!-- #5 addEventListenter() Method - HTML DOM EVENTLISTENER -->
+  <p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+  <button id="myBtn">Try it</button>
+  <app-root></app-root>
+</body>
+<script>
+  // #1 getElementById Method - HTML DOM ELEMENTS
+  document.getElementById("demo").innerHTML = "Super Negro";
+  // #2 Change HTML content - CHANGING HTML
+  document.getElementById("p1").innerHTML = "New text!";
+  // #3 Changing HTML Style - CHANGING CSS
+  document.getElementById("p2").style.color = "red";
+  // #4 HTML Event Attributes - HTML DOM EVENTS
+  function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+  // #5 addEventListenter() Method - JAVASCRIPT HTML DOM EVENTLISTENER
+  document.getElementById("myBtn").addEventListener("click", function() {
+  alert("Hello World!");
+});
+}
+</script>
+</html>
